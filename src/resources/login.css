@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+    -fx-padding: 0;
+    -fx-margin: 0;
+    -fx-box-sizing: border-box;
+    -fx-font-family: "Arial";
+}
+
+/* Root Layout */
+.root {
+    -fx-background-color: #121212; /* Dark background for the page */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 16px;
+    -fx-display: flex;
+    -fx-alignment: center;
+    -fx-pref-height: 600px; /* Adjusted height */
+    -fx-max-height: 600px;  /* Use max-height for a percentage-based height */
+    -fx-padding: 20px;
+}
+
+/* Title and Headline */
+.page-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3ea808; /* Orange color for page title */
+    -fx-text-alignment: center;
+    -fx-padding: 30px 0 0 0;
+}
+
+.headline {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF5722; /* Orange for section headlines */
+    -fx-padding: 0 0 15px 0;
+    -fx-text-alignment: center;
+}
+
+/* Form Inputs */
+.text-field,
+.password-field {
+    -fx-pref-width: 100%;
+    -fx-padding: 12px;
+    -fx-margin: 10px 0; /* Corrected margin */
+    -fx-border-color: #ccc; /* Light grey border */
+    -fx-border-width: 1px;
+    -fx-background-color: #1E1E1E; /* Dark input background */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #FF5722; /* Orange border on focus */
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #4CAF50; /* Green button */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 12px 20px;
+    -fx-border-color: #45a049; /* Darker green border */
+    -fx-border-width: 2px; /* Corrected border width */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-margin-top: 20px;
+    -fx-pref-width: 200px; /* Full-width button */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Lighter green on hover */
+    -fx-border-color: #3e8e41; /* Darker border on hover */
+}
+
+/* Error Message */
+.error-message {
+    -fx-text-fill: #FF0000; /* Red text for error messages */
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+    -fx-padding: 10px 0 0 0;
+}
+
+/* Navbar */
+.navbar {
+    -fx-background-color: #333; /* Dark background for navbar */
+    -fx-text-fill: #fff; /* White text */
+    -fx-padding: 10px;
+    -fx-border-color: #FF5722; /* Orange bottom border */
+    -fx-border-width: 0 0 2px 0;
+}
+
+.navbar a {
+    -fx-text-fill: #FF5722; /* Orange link color */
+    -fx-font-weight: bold;
+    -fx-text-decoration: none;
+    -fx-padding: 8px 12px;
+    -fx-border-color: transparent; /* Invisible border for hover effect */
+    -fx-border-radius: 5px;
+}
+
+.navbar a:hover {
+    -fx-text-fill: white; /* Change text color on hover */
+    -fx-background-color: #FF5722; /* Orange background on hover */
+    -fx-border-color: #FF5722; /* Orange border on hover */
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-padding: 10px;
+}
+
+/* Styling for ScrollPane's Viewport */
+.scroll-pane .viewport {
+    -fx-background-color: #121212; /* Match background with the root layout */
+}

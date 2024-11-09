@@ -1,0 +1,101 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Root Layout */
+.root {
+    background-color: #121212; /* Dark background for the page */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Change from 100vh to 100% */
+    min-height: 100%; /* Ensure the root element always fills the viewport height */
+}
+
+/* Home Page Title (Main title at the top) */
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #3ea808; /* Orange color for page title */
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Headline */
+.headline {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF5722; /* Orange color for section headlines */
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Home Page Section */
+.home-section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #333; /* Dark grey section */
+    border-width: 2px; /* Specify border width */
+    border-style: solid; /* Specify border style */
+    border-color: #FF5722; /* Orange border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Home Page Links (e.g., to Sleep Tracker, Workout Pages) */
+.home-link {
+    display: inline-block;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 12px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-width: 2px; /* Specify border width */
+    border-style: solid; /* Specify border style */ 
+    border-color: #45a049; /* Green border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.home-link:hover {
+    background-color: #45a049;
+    border-color: #3e8e41; /* Darker green border on hover */
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom-width: 2px; /* Specify bottom border width */
+    border-bottom-style: solid; /* Specify bottom border style */
+    border-bottom-color: #FF5722; /* Orange bottom border */
+}
+
+.navbar a {
+    color: #FF5722;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    border-width: 2px; /* Specify border width */
+    border-style: solid; /* Specify border style */
+    border-color: transparent; /* Invisible border for hover effect */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.navbar a:hover {
+    color: white;
+    background-color: #FF5722; /* Orange background on hover */
+    border-width: 2px; /* Specify border width */
+    border-style: solid; /* Specify border style */
+    border-color: #FF5722; /* Orange border on hover */
+}

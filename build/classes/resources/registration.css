@@ -1,0 +1,134 @@
+/* Global Styles */
+* {
+    -fx-margin: 0;
+    -fx-padding: 0;
+    -fx-font-family: "Arial", sans-serif; /* Default font */
+}
+
+/* Root Layout */
+.root {
+    -fx-background-color: #121212; /* Dark background for the page */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 16px; /* Default font size */
+    -fx-alignment: center; /* Centers content horizontally */
+    -fx-pref-height: 100vh; /* Full height of the viewport */
+    -fx-padding: 20px; /* Padding around the root */
+}
+
+/* Title and Headline */
+.page-title {
+    -fx-font-size: 36px; /* Font size for the page title */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #FF5722; /* Orange color for page title */
+    -fx-alignment: center; /* Centered text */
+    -fx-padding: 30 0 0 0; /* Top padding */
+}
+
+.register-title {
+    -fx-font-size: 28px; /* Font size for registration section title */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #FF5722; /* Orange color for register title */
+    -fx-alignment: center; /* Centered text */
+    -fx-padding: 20 0; /* Padding for spacing */
+}
+
+.headline {
+    -fx-font-size: 24px; /* Font size for section headlines */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #FF5722; /* Orange for section headlines */
+    -fx-padding: 0 0 15 0; /* Bottom padding */
+    -fx-alignment: center; /* Centered text */
+}
+
+/* Form Inputs */
+.input-field {
+    -fx-background-color: #444; /* Darker background for input fields */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-padding: 12px; /* Padding inside input fields */
+    -fx-margin: 10px 0; /* Margin on top and bottom */
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+    -fx-border-color: #ccc; /* Light grey border */
+    -fx-border-radius: 4px; /* Rounded corners */
+}
+
+.input-field:focused {
+    -fx-border-color: #FF5722; /* Orange border on focus */
+    -fx-outline: none; /* Remove default outline */
+}
+
+/* Buttons (register, etc.) */
+.button {
+    -fx-background-color: #4CAF50; /* Green button */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 12px 20px; /* Padding inside button */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+    -fx-border-color: #45a049; /* Darker green border */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-font-size: 18px; /* Font size for button text */
+    -fx-margin-top: 20px; /* Margin on top */
+    -fx-pref-width: 100%; /* Full-width button */
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Lighter green on hover */
+    -fx-border-color: #3e8e41; /* Darker border on hover */
+}
+
+/* Scrollable Layout */
+.scrollable-layout {
+    -fx-overflow-y: auto; /* Enable vertical scrolling */
+    -fx-max-height: 600px; /* Limit the height of the layout */
+    -fx-padding-right: 10px; /* Padding for scrollbar */
+}
+
+/* Form Container */
+.form-container {
+    -fx-max-width: 800px; /* Max width of the form */
+    -fx-margin: 20px; /* Margin around the form */
+    -fx-padding: 30px; /* Padding inside the form */
+    -fx-background-color: #1e1e1e; /* Slightly lighter background for the form */
+    -fx-border-radius: 10px; /* Rounded corners */
+}
+
+/* Page Title & Register Section Layout */
+.form-layout {
+    -fx-spacing: 20px; /* Spacing between elements in the form */
+    -fx-alignment: center; /* Center content in the form */
+}
+
+/* Back Button Styling */
+.back-button {
+    -fx-background-color: #FF5722; /* Orange back button */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 12px 20px; /* Padding inside button */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-font-size: 18px; /* Font size for button text */
+    -fx-margin-top: 20px; /* Margin on top */
+    -fx-pref-width: 100%; /* Full-width button */
+}
+
+.back-button:hover {
+    -fx-background-color: #e64a19; /* Darker orange on hover */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .page-title {
+        -fx-font-size: 28px; /* Adjust title font size on smaller screens */
+    }
+
+    .form-container {
+        -fx-padding: 20px; /* Reduced padding for mobile */
+    }
+
+    .input-field {
+        -fx-font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .button {
+        -fx-font-size: 16px; /* Smaller button font size on mobile */
+    }
+}

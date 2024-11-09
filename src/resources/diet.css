@@ -1,0 +1,191 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Root Layout */
+.root {
+    -fx-background-color: #121212; /* Dark background */
+    -fx-font-family: Arial, sans-serif;
+}
+
+/* Title Style */
+.title {
+    -fx-text-fill: #FF5722; /* Orange color for title */
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+}
+
+/* ScrollPane Style */
+.scroll-pane {
+    -fx-background-color: #121212; /* Dark background for scroll pane */
+    -fx-border-color: #FF5722; /* Orange border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+}
+
+/* Button Style */
+.button {
+    -fx-background-color: #4CAF50; /* Green background */
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #45a049; /* Darker green on hover */
+}
+
+/* Label for information */
+.label {
+    -fx-text-fill: #D3D3D3; /* Light gray text for better visibility */
+    -fx-font-size: 14px;
+    -fx-line-spacing: 1.5; /* Add some space between lines */
+}
+
+/* Headline */
+.headline {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF5722;
+    -fx-alignment: center;
+    -fx-padding: 15px 0;
+}
+
+/* Center alignment for button container */
+.button-container {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+    -fx-padding: 20px 0;
+}
+
+/* ScrollPane Background */
+.scroll-pane {
+    -fx-background-color: #121212; /* Match the black background */
+}
+
+/* Navbar */
+.navbar {
+    -fx-background-color: #333;
+    -fx-text-fill: #ffffff;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-border-bottom-color: #ffffff;
+    -fx-border-bottom-width: 2px;
+}
+
+.navbar a {
+    -fx-text-fill: #FF5722;
+    -fx-font-weight: bold;
+    -fx-underline: false;
+    -fx-padding: 10px;
+    -fx-border-color: transparent;
+}
+
+.navbar a:hover {
+    -fx-text-fill: #FF9800;
+    -fx-underline: true;
+}
+
+/* Additional Styles for Diet Tracker Page */
+.diet-page {
+    -fx-background-color: #121212; /* Dark background */
+    -fx-padding: 20px;
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #4CAF50; /* Green background color */
+    -fx-text-fill: white;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 8px;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 150px;
+    -fx-cursor: hand;
+    -fx-alignment: center;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 2px;
+}
+
+/* Styling for text fields and combo boxes */
+.text-field,
+.combo-box {
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-pref-width: 100%;
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+}
+
+/* Styling for ListView */
+.list-view {
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 5px;
+    -fx-background-color: #1e1e1e;
+    -fx-padding: 10px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Footer styling for additional information or links */
+.footer {
+    -fx-padding: 10px;
+    -fx-text-fill: #666666;
+    -fx-alignment: center;
+}
+
+/* Styling for table views */
+.table-view {
+    -fx-background-color: #1e1e1e;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 5px;
+}
+
+/* Styling for table headers */
+.table-view .column-header {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+}
+
+/* Styling for table rows */
+.table-view .table-row {
+    -fx-padding: 5px;
+    -fx-text-fill: #ffffff;
+}
+
+/* Highlighting for selected table rows */
+.table-view .table-row:selected {
+    -fx-background-color: #a1d99b;
+}
+
+/* Styling for Alerts */
+.alert {
+    -fx-background-color: #ffcccc;
+    -fx-text-fill: #a60000;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+}
+
+/* General styling for form layouts */
+.form-layout {
+    -fx-padding: 20px;
+    -fx-background-color: #1e1e1e;
+    -fx-border-radius: 5px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1px;
+}
+
+/* Adjustments for the entire layout */
+.vbox {
+    -fx-spacing: 20px;
+    -fx-padding: 20px;
+}

@@ -1,0 +1,156 @@
+/* Global Styles */
+* {
+    -fx-padding: 0; /* Remove default padding */
+    -fx-margin: 0; /* Remove default margin */
+    -fx-box-sizing: border-box; /* Include padding and border in element's total width and height */
+    -fx-font-family: "Arial", sans-serif; /* Default font */
+}
+
+/* Root Layout */
+.root {
+    -fx-background-color: #121212; /* Dark background for the page */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 16px; /* Default font size */
+    -fx-display: flex;
+    -fx-alignment: center;
+    -fx-pref-height: 600px; /* Adjusted height */
+    -fx-max-height: 600px; /* Use max-height for a percentage-based height */
+    -fx-padding: 20px;
+}
+
+.fit-together-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF5722; /* Orange color */
+    -fx-alignment: center;
+    -fx-padding: 10px;
+}
+
+/* Page Title */
+.page-title {
+    -fx-font-size: 36px; /* Font size for page title */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #FF5722; /* Orange color for page title */
+    -fx-text-alignment: center; /* Centered text */
+    -fx-padding: 30px 0 0 0; /* Padding above title */
+}
+
+/* Headline */
+.headline {
+    -fx-font-size: 24px; /* Font size for section headlines */
+    -fx-font-weight: bold; /* Bold font weight */
+    -fx-text-fill: #FF5722; /* Orange for section headlines */
+    -fx-padding: 0 0 15px 0; /* Padding below headline */
+    -fx-text-alignment: center; /* Centered text */
+}
+
+/* Form Inputs */
+.text-field,
+.password-field {
+    -fx-pref-width: 100%; /* Full width for inputs */
+    -fx-padding: 12px; /* Padding inside input */
+    -fx-margin: 10px 0; /* Margin on top and bottom */
+    -fx-border-width: 1px; /* Specify border width */
+    -fx-border-style: solid; /* Specify border style */
+    -fx-border-color: #ccc; /* Light grey border */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-background-color: #1E1E1E; /* Dark input background */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #FF5722; /* Orange border on focus */
+    -fx-outline: none; /* Remove default outline */
+}
+
+/* ComboBox Inputs */
+.combo-box {
+    -fx-pref-width: 100%; /* Full width for inputs */
+    -fx-padding: 12px; /* Padding inside input */
+    -fx-margin: 10px 0; /* Margin on top and bottom */
+    -fx-border-width: 1px; /* Specify border width */
+    -fx-border-style: solid; /* Specify border style */
+    -fx-border-color: #ccc; /* Light grey border */
+    -fx-border-radius: 4px; /* Rounded corners */
+    -fx-background-color: #1E1E1E; /* Dark input background */
+    -fx-text-fill: #ffffff; /* White text */
+}
+
+.combo-box:focused {
+    -fx-border-color: #FF5722; /* Orange border on focus */
+    -fx-outline: none; /* Remove default outline */
+}
+
+/* Buttons */
+.button, .sleep-button {
+    -fx-background-color: #4CAF50; /* Green button */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 12px 20px; /* Padding inside button */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-color: #45a049; /* Darker green border */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-font-size: 18px; /* Font size for button text */
+    -fx-font-weight: bold; /* Bold button text */
+    -fx-margin-top: 20px; /* Margin on top */
+    -fx-pref-width: 200px; /* Full-width button */
+}
+
+.button:hover, .sleep-button:hover {
+    -fx-background-color: #45a049; /* Lighter green on hover */
+    -fx-border-color: #3e8e41; /* Darker border on hover */
+}
+
+/* ScrollPane */
+.scroll-pane {
+    -fx-background-color: #121212; /* Dark background for ScrollPane */
+    -fx-border: none; /* No borders */
+    -fx-padding: 10px; /* Padding inside the ScrollPane */
+}
+
+/* Sleep Log Table */
+.sleep-log-table, .table-view {
+    -fx-pref-width: 100%; /* Full width for the table */
+    -fx-border-collapse: collapse; /* Merge table borders */
+    -fx-margin: 20px 0; /* Margin on top and bottom */
+}
+
+.sleep-log-table th, .table-view th,
+.sleep-log-table td, .table-view td {
+    -fx-border-width: 1px; /* Border width */
+    -fx-border-style: solid; /* Border style */
+    -fx-border-color: #FF5722; /* Orange borders for table */
+    -fx-padding: 12px; /* Padding inside cells */
+    -fx-text-alignment: center; /* Centered text in cells */
+    -fx-text-fill: white; /* White text color */
+}
+
+.sleep-log-table th, .table-view th {
+    -fx-background-color: #333; /* Dark background for header */
+    -fx-text-fill: #FF5722; /* Orange text for headers */
+}
+
+.sleep-log-table td, .table-view td {
+    -fx-background-color: #222; /* Dark background for table cells */
+}
+
+/* Back Button */
+.back-button {
+    -fx-background-color: #FF5722; /* Orange button */
+    -fx-text-fill: white; /* White text */
+    -fx-padding: 12px 20px; /* Padding inside button */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-color: #FF5722; /* Orange border */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-cursor: hand; /* Pointer cursor on hover */
+    -fx-font-size: 18px; /* Font size for button text */
+    -fx-font-weight: bold; /* Bold button text */
+    -fx-margin-top: 20px; /* Margin on top */
+    -fx-pref-width: 200px; /* Full-width button */
+}
+
+.back-button:hover {
+    -fx-background-color: #e64a19; /* Darker orange on hover */
+    -fx-border-color: #e64a19; /* Darker orange border on hover */
+}

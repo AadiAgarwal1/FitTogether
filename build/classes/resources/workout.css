@@ -1,0 +1,102 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Root Layout */
+.root {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Default text color */
+    font-size: 16px; /* Default font size */
+}
+
+/* ScrollPane Background */
+.scroll-pane {
+    -fx-background-color: #121212; /* Match the dark background */
+}
+
+/* Title and Headline */
+.page-title {
+    -fx-font-size: 36px; /* Font size for the page title */
+    -fx-font-weight: bold; /* Make the title bold */
+    -fx-text-fill: #FF5722; /* Title color */
+    -fx-text-alignment: center; /* Center align text */
+    -fx-padding: 30px 0; /* Padding around the title */
+}
+
+.headline {
+    -fx-font-size: 24px; /* Font size for headlines */
+    -fx-font-weight: bold; /* Make headlines bold */
+    -fx-text-fill: #FF5722; /* Headline color */
+    -fx-alignment: center; /* Align headlines in center */
+    -fx-padding: 15px 0; /* Add padding above and below headlines */
+}
+
+/* Workout Card */
+.workout-card {
+    -fx-background-color: #333; /* Card background color */
+    -fx-padding: 20px; /* Padding inside the card */
+    -fx-margin: 20px; /* Margin around the card */
+    -fx-border-color: #FF5722; /* Card border color */
+    -fx-border-width: 2px; /* Card border width */
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-text-fill: white; /* Text color inside the card */
+}
+
+/* Buttons (add, delete, etc.) */
+.button {
+    -fx-background-color: #4CAF50; /* Button background color */
+    -fx-text-fill: white; /* Button text color */
+    -fx-padding: 12px 20px; /* Padding inside the button */
+    -fx-border-radius: 8px; /* Rounded corners for buttons */
+    -fx-border-color: #45a049; /* Button border color */
+    -fx-border-width: 2px; /* Button border width */
+    -fx-font-size: 18px; /* Button text size */
+    -fx-cursor: hand; /* Hand cursor on hover */
+    -fx-pref-width: 100%; /* Full-width button */
+    -fx-alignment: center; /* Center text in button */
+    -fx-font-weight: bold; /* Bold button text */
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.5), 10, 0, 0, 2); /* Shadow effect */
+    -fx-margin: 10px 0; /* Margin between buttons */
+}
+
+/* Button Hover Effect */
+.button:hover {
+    -fx-background-color: #45a049; /* Darken button on hover */
+    -fx-border-color: #3e8e41; /* Darken border on hover */
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.7), 10, 0, 0, 4); /* Enhanced shadow effect on hover */
+}
+
+/* Navbar */
+.navbar {
+    -fx-background-color: #333; /* Navbar background color */
+    -fx-text-fill: #fff; /* Navbar text color */
+    -fx-padding: 10px; /* Padding in navbar */
+    -fx-alignment: center; /* Center align navbar content */
+    -fx-border-bottom-color: #FF5722; /* Bottom border color */
+    -fx-border-bottom-width: 2px; /* Bottom border width */
+}
+
+.navbar a {
+    -fx-text-fill: #FF5722; /* Link text color */
+    -fx-font-weight: bold; /* Bold link text */
+    -fx-underline: false; /* Remove underline from links */
+    -fx-margin: 0 15px; /* Margin between links */
+    -fx-padding: 10px; /* Padding around links */
+    -fx-border-color: transparent; /* No border for links */
+}
+
+.navbar a:hover {
+    -fx-text-fill: white; /* Change text color on hover */
+    -fx-background-color: #FF5722; /* Highlight background color on hover */
+    -fx-border-color: #FF5722; /* Highlight border on hover */
+}
+
+/* Additional Styles for Workout Page */
+.workout-page {
+    -fx-background-color: #121212; /* Dark background for the Workout Page */
+    -fx-padding: 20px; /* Padding for the overall workout page */
+}
